@@ -1,6 +1,7 @@
 FROM php:7.1
 
-MAINTAINER huangzhhui <h@swoft.org>
+#MAINTAINER huangzhhui <h@swoft.org>
+COPY sources.list /etc/apt/sources.list
 
 # Version
 ENV PHPREDIS_VERSION 4.0.0
