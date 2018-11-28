@@ -2,13 +2,13 @@ version: '3'
 
 services:
     swoft:
-       image: swoft/swoft:latest
+       image: 19931106/swoft:latest
 #       build: ./
        ports:
-         - "80:80"
+         - "8090:80"
        volumes:
          - ./:/var/www/swoft
        stdin_open: true 
        tty: true
        privileged: true
-       entrypoint: ["php", "/var/www/swoft/bin/swoft", "start"]
+       entrypoint: ["composer", "/var/www/swoft/bin/swoft", "start"]
