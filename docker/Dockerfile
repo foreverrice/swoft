@@ -23,6 +23,7 @@ RUN apt-get update \
         libssl-dev \
         libnghttp2-dev \
         libpcre3-dev \
+        vim \
     && apt-get clean \
     && apt-get autoremove
 
@@ -81,4 +82,4 @@ RUN composer install --no-dev \
 
 EXPOSE 80
 
-#ENTRYPOINT ["php", "/var/www/swoft/bin/swoft", "start"]
+ENTRYPOINT ["php", "/var/www/swoft/bin/swoft", "start"]
