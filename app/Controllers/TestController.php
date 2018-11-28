@@ -20,7 +20,7 @@ use Swoft\Http\Message\Server\Request;
  *
  * @Controller(prefix="/test")
  */
-class RestController
+class TestController
 {
     /**
      * 查询列表接口
